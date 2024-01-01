@@ -49,4 +49,4 @@ def init_app(app):
 
 import requests
 response = requests.get('http://server-url.cz/api')
-
+data = response.json()
