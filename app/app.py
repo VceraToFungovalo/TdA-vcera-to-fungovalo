@@ -17,6 +17,12 @@ except OSError:
 
 db.init_app(app)
 
+@app.route('/data', methods=['GET'])
+def get_data():
+    url = "http://server-url.cz/api"
+    data = {'key': 'value'}
+    return jsonify(data)
+
 
 @app.route('/')
 def hello_world():  # put application's code here
