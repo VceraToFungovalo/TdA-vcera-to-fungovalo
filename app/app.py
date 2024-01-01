@@ -16,14 +16,6 @@ except OSError:
     pass
 
 db.init_app(app)
-
-@app.route('/data', methods=['GET'])
-def get_data():
-    url = "http://server-url.cz/api"
-    data = {'key': 'value'}
-    return jsonify(data)
-if __name__ == '__main__':
-    app.run(debug=True)
     
 @app.route('/')
 def hello_world():  # put application's code here
@@ -31,4 +23,4 @@ def hello_world():  # put application's code here
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
