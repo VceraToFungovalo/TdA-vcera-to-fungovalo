@@ -47,7 +47,3 @@ def init_app(app):
     app.teardown_appcontext(close_db)
     app.cli.add_command(init_db_command)
 
-@app.route('/data', methods=['GET'])
-def get_data():
-    url = "http://server-url.cz/api"
-    return jsonify(data)
