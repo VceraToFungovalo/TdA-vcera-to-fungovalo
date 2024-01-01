@@ -23,7 +23,6 @@ def get_data():
     data = {'key': 'value'}
     return jsonify(data)
 
-
 @app.route('/')
 def hello_world():  # put application's code here
     return "Hello TdA"
