@@ -21,7 +21,7 @@ db.init_app(app)
 def get_data():
     url = "http://server-url.cz/api"
     data = {'key': 'value'}
-    return jsonify(data)
+    return jsonify({"secret":"The cake is a lie"}.)
 
 @app.route('/')
 def hello_world():  # put application's code here
