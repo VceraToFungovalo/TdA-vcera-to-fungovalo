@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, Jsonify
+from flask import Flask, jsonify
 from . import db
 
 app = Flask(__name__)
