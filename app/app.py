@@ -17,6 +17,8 @@ except OSError:
 
 db.init_app(app)
 
+from flask import Flask, jsonify
+app = Flask(__name__)
 @app.route('/data', methods=['GET'])
 def get_data():
     url = "http://server-url.cz/api" 
