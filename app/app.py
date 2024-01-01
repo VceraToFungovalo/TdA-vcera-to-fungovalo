@@ -19,7 +19,7 @@ db.init_app(app)
 
 @app.route('/data', methods=['GET'])
 def get_data():
-    # Implementujte získání dat z API
+    url = "http://server-url.cz/api"
     data = {'key': 'value'}
     return jsonify(data)
     
