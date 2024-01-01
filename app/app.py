@@ -20,7 +20,6 @@ db.init_app(app)
 @app.route('/data', methods=['GET'])
 def get_data():
     url = "http://server-url.cz/api"
-    data = {'key': 'value'}
     return jsonify({"secret":"The cake is a lie"}.)
 
 @app.route('/')
