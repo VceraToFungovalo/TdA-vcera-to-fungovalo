@@ -20,7 +20,7 @@ db.init_app(app)
 @app.route('/')
 def hello_world():  # put application's code here
     return "Hello TdA"
-@app.route('/data', methods=['GET'])
+
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
