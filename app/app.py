@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask
+from flask import Flask, render_template, request, jsonify
 from . import db
 
 app = Flask(__name__)
@@ -20,6 +20,7 @@ db.init_app(app)
 @app.route('/')
 def hello_world():  # put application's code here
     return "Hello TdA"
+    
 @app.route('/api')
 def API():
     return jsonify({"secret":"The cake is a lie"})
