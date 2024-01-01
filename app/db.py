@@ -46,3 +46,7 @@ def init_db_command():
 def init_app(app):
     app.teardown_appcontext(close_db)
     app.cli.add_command(init_db_command)
+
+import requests
+response = requests.get('http://server-url.cz/api')
+
