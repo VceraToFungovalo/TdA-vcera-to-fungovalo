@@ -22,6 +22,8 @@ def get_data():
     url = "http://server-url.cz/api"
     data = {'key': 'value'}
     return jsonify(data)
+if __name__ == '__main__':
+    app.run(debug=True)
     
 @app.route('/')
 def hello_world():  # put application's code here
